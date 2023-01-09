@@ -78,7 +78,7 @@ nav {
   text-align: center;
   align-items: center;
   color: white;
-  background-color: rgba(179, 205, 255, 0.219);
+  background-color: rgba(24, 105, 255, 0.756);
   padding: 0px 10px;
   box-shadow: 0 0 12px black;
 }
@@ -90,7 +90,7 @@ a {
 }
 .active {
   color: black;
-  text-shadow: 0 0 6px black;
+  text-shadow: 0 0 6px rgb(255, 255, 255);
 }
 .ver {
   border: 2px solid black;
