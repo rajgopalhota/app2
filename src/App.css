@@ -1,6 +1,9 @@
 .App {
   text-align: center;
 }
+.sdhfg{
+  columns: 2;
+}
 
 .App-logo {
   height: 40vmin;

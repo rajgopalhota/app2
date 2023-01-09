@@ -1,13 +1,119 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  color: white;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+section {
+  z-index: -999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(90deg, #3f51b5, #00bcd4);
+  animation: animate 15s linear infinite;
+}
+section:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 100vh solid transparent;
+  border-left: 100vh solid #fff;
+  opacity: 0.1;
+}
+section:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-top: 100vh solid transparent;
+  border-right: 100vh solid #fff;
+  opacity: 0.1;
+}
+@keyframes animate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+  100% {
+    filter: hue-rotate(0deg);
+  }
+}
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h1 {
+  margin-top: 2%;
+  font-weight: 800;
+  text-shadow: 0 0 22px orange;
+  text-transform: uppercase;
+  color: aliceblue;
+  text-align: center;
+  font-size: 102px;
+  mix-blend-mode: overlay;
+}
+h2 {
+  font-size: 70px;
+  font-weight: 700;
+  mix-blend-mode: overlay;
+  text-shadow: 0 0 6px black;
+}
+nav {
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  align-items: center;
+  color: white;
+  background-color: rgba(179, 205, 255, 0.219);
+  padding: 0px 10px;
+  box-shadow: 0 0 12px black;
+}
+a {
+  text-decoration: none;
+  mix-blend-mode: overlay;
+  font-size: 42px;
+  color: aliceblue;
+}
+.active {
+  color: black;
+  text-shadow: 0 0 6px black;
+}
+.ver {
+  border: 2px solid black;
+  height: 100vh;
+  width: 0;
+  position: absolute;
+  left: 50%;
+}
+button {
+  align-items: center;
+  margin-left: 40%;
+  margin-top: 8%;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 30px;
+  padding: 1% 2%;
+  border-radius: 50px;
+  background-color: rgba(0, 76, 255, 0.76);
+  border: 2px solid white;
+}
+button:hover{
+  color: white;
+  cursor: pointer;
+  mix-blend-mode: screen;
+  background-color: rgba(0, 76, 255, 0.76);
 }
