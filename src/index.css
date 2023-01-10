@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 body {
+  text-align: center;
   color: white;
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -67,12 +68,13 @@ h1 {
   mix-blend-mode: overlay;
 }
 h2 {
+  text-align: center;
   font-size: 70px;
   font-weight: 700;
   mix-blend-mode: overlay;
   text-shadow: 0 0 6px black;
 }
-nav {
+.PrimaryNav {
   font-weight: 800;
   text-transform: uppercase;
   text-align: center;
@@ -83,12 +85,19 @@ nav {
   box-shadow: 0 0 12px black;
 }
 a {
+  border-radius: 40px;
+  padding: 0 22px;
   text-decoration: none;
   mix-blend-mode: overlay;
   font-size: 42px;
   color: aliceblue;
 }
+a:hover{
+  transition: all ease-in-out 0.5s;
+}
 .active {
+  transition: all ease-in-out 2s;
+  background-color: aliceblue;
   color: black;
   text-shadow: 0 0 6px rgb(255, 255, 255);
 }
@@ -101,7 +110,7 @@ a {
 }
 button {
   align-items: center;
-  margin-left: 40%;
+  margin-left: 0%;
   margin-top: 8%;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
@@ -116,4 +125,13 @@ button:hover{
   cursor: pointer;
   mix-blend-mode: screen;
   background-color: rgba(0, 76, 255, 0.76);
+}
+
+.SubLinks{
+  text-align: center;
+}
+.SubLinks a{
+  border-radius: 40px;
+  box-shadow: 0 0 12px aliceblue;
+  border: 2px solid aliceblue;
 }
