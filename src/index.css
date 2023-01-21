@@ -116,9 +116,10 @@ button {
   text-transform: uppercase;
   font-size: 30px;
   padding: 1% 2%;
-  border-radius: 50px;
+  border-radius: 40px;
   background-color: rgba(0, 76, 255, 0.76);
   border: 2px solid white;
+  box-shadow: 18px 16px 26px rgba(0, 0, 0, 0.658);
 }
 button:hover{
   color: white;
@@ -126,7 +127,6 @@ button:hover{
   mix-blend-mode: screen;
   background-color: rgba(0, 76, 255, 0.76);
 }
-
 .SubLinks{
   text-align: center;
 }
@@ -134,4 +134,37 @@ button:hover{
   border-radius: 40px;
   box-shadow: 0 0 12px aliceblue;
   border: 2px solid aliceblue;
+}
+
+.btngp{
+  margin-top: 0;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btngp button{
+  margin-left: 3%;
+  padding: 12px;
+}
+
+
+label{
+  font-size: 42px;
+  mix-blend-mode: overlay;
+  font-weight: bolder;
+
+}
+
+input{
+  color: #fff;
+  width: 30%;
+  font-size: 39px;
+  padding: 8px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid aliceblue;
+}
+.LoginForm button{
+  margin-right: 5%;
 }
