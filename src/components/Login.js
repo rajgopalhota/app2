@@ -15,8 +15,8 @@ export default function Login() {
     <div className='LoginForm'>
       <label>
         Username: <input type='text' onChange={(event)=>setUser(event.target.value)}  />
-        <button onClick={handleLogin}>Login</button>
       </label>
+      <button onClick={handleLogin}>Login</button>
     </div>
   )
 }

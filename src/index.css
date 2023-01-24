@@ -109,6 +109,7 @@ a:hover{
   left: 50%;
 }
 button {
+  z-index: 999;
   align-items: center;
   margin-left: 0%;
   margin-top: 8%;
@@ -167,4 +168,12 @@ input{
 }
 .LoginForm button{
   margin-right: 5%;
+}
+
+label{
+  padding: 0 18px;
+}
+
+label:focus{
+  border: none;
 }
