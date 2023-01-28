@@ -1,9 +1,15 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
-import { AuthProvider } from './auth'
+import { NavLink, useNavigate } from 'react-router-dom'
+import { useAuth } from './auth'
 export default function Navbar() {
+    const auth = useAuth();
+    const navigate = useNavigate();
+    const handleLogout = () => {
+        auth.logout();
+        navigate('/');
+    }
     return (
-        <AuthProvider>
+        <div className="navbar">
             <nav className='PrimaryNav'>
                 <section></section>
                 <ul>
@@ -12,9 +18,18 @@ export default function Navbar() {
                     <NavLink to="/products">Products</NavLink>
                     <NavLink to="/users">Users</NavLink>
                     <NavLink to="/profile">Profile</NavLink>
-                    <NavLink to="/login">Login</NavLink>
+                    {
+                        !auth.user && (
+                            <NavLink to="/login">Login</NavLink>
+                        )
+                    }
+                    {
+                        !(!auth.user) && (
+                            <button onClick={handleLogout}>Logout</button>
+                        )
+                    }
                 </ul>
             </nav>
-        </AuthProvider>
+        </div>
     )
 }

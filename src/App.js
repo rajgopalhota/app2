@@ -12,6 +12,7 @@ import UserDetails from './components/UserDetails';
 import Profile from './components/Profile';
 import Login from './components/Login';
 import { AuthProvider } from './components/auth';
+import RequireAuth from './components/RequireAuth';
 function App() {
 
     return (
@@ -30,7 +31,7 @@ function App() {
                     <Route path='users' element={<Users />} >
                         <Route path=":uid" element={<UserDetails />} />
                     </Route>
-                    <Route path='profile' element={<Profile />} />
+                    <Route path='profile' element={<RequireAuth><Profile /></RequireAuth>} />
                     <Route path='login' element={<Login />} />
                     <Route path='*' element={<Nomatch />} />
                 </Routes>

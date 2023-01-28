@@ -74,6 +74,9 @@ h2 {
   mix-blend-mode: overlay;
   text-shadow: 0 0 6px black;
 }
+.ProductsPage{
+  margin-top: 5%;
+}
 .PrimaryNav {
   font-weight: 800;
   text-transform: uppercase;
@@ -84,12 +87,12 @@ h2 {
   padding: 0px 10px;
   box-shadow: 0 0 12px black;
 }
-a {
+nav a {
   border-radius: 40px;
   padding: 0 22px;
   text-decoration: none;
   mix-blend-mode: overlay;
-  font-size: 42px;
+  font-size: 22px;
   color: aliceblue;
 }
 a:hover{
@@ -111,8 +114,7 @@ a:hover{
 button {
   z-index: 999;
   align-items: center;
-  margin-left: 0%;
-  margin-top: 8%;
+  
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   font-size: 30px;
@@ -138,7 +140,7 @@ button:hover{
 }
 
 .btngp{
-  margin-top: 0;
+  margin-top: 2%;
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -166,6 +168,9 @@ input{
   border: none;
   border-bottom: 2px solid aliceblue;
 }
+.LoginForm{
+  margin-top: 5%;
+}
 .LoginForm button{
   margin-right: 5%;
 }
@@ -176,4 +181,19 @@ label{
 
 label:focus{
   border: none;
+}
+
+
+
+nav button{
+  margin-right: 0;
+  margin-right: 0;
+  padding: 12px 0;
+  font-weight: 700;
+  background: linear-gradient(90deg, red, orange);
+  box-shadow: 0 0 0;
+  margin-top: 0;
+  font-size: 12px;
+  width: 8%;
+  height: 3%;
 }

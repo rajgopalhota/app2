@@ -3,7 +3,7 @@ import { NavLink, Outlet } from 'react-router-dom'
 
 export default function Products() {
     return (
-        <>
+        <div className='ProductsPage'>
             <div>
                 <h2>Poducts Page</h2>
             </div>
@@ -12,6 +12,6 @@ export default function Products() {
                 <NavLink to="new" >New Products</NavLink>
             </nav>
             <Outlet></Outlet>
-        </>
+        </div>
     )
 }
